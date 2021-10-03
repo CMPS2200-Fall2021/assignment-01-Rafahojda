@@ -30,7 +30,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.         Yes because
+.         Yes 
 .  
 .  
 .  

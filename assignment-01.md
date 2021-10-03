@@ -18,7 +18,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.         No because 
+.         No because using Lhopitals Rule, the limit is infinity 
 .  
 .  
 .  
@@ -30,12 +30,12 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.         Yes because
+.         Yes 
 .  
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.         No 
+.         No because using Lhopitals Rule, the limit is infinty 
 .  
 .  
 .  
@@ -53,6 +53,7 @@ $g(n) \in o(f(n))$ means that for **every** positive constant $c$, there exists 
 
 **Prove** that $o(g(n)) \cap \omega(g(n))$ is the empty set.  
 
+f(n) would be less than and greater than g(n) when mupltiplied with every constant c so that shows its an empty set.
 .  
 .  
 .  
@@ -147,8 +148,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
 
   - 3e. Assume that we parallelize in a similar way we did with `sum_list_recursive`. That is, each recursive call spawns a new thread. What is the Work and Span of this algorithm?  
-        Work = 
-        Span = 
+        Work = O(n)
+        Span = O(log n)
 
 .  
 .  
